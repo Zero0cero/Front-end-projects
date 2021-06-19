@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokeball</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .outside-circle{
+      position: relative;
+      overflow: hidden;
+      height: 50vh;
+      width: 50vh;
+      border: 10px solid black;
+      background-color: inherit;
+      margin: 25vh auto;
+      border-radius: 50%;
+      
+    }
+    .outside-circle .red-div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background-color: red;
+    }
+    .outside-circle .middle-line{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      height: 14px;
+      background-color: black;
+
+    }
+
+    .outside-circle .inner-circle{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width:20%;
+      height:20%;
+      border-radius: 50%;
+      border: 10px solid black;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .inner-circle .buttom-div{
+      width: 50%;
+      height: 50%;
+      background-color: black;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <h1>PokeBall</h1>
+  <div class="outside-circle">
+    <div class="red-div"></div>
+    <div class="middle-line"></div>
+    <div class="inner-circle">
+      <div class="buttom-div"></div>
+    </div>
+  </div>
+
+</body>
+</html>
